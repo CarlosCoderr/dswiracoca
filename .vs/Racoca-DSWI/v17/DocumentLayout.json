@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyectos VS\\Racoca-DSWI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|d:\\proyectos vs\\racoca-dswi\\racoca-dswi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|d:\\proyectos vs\\racoca-dswi\\racoca-dswi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|d:\\proyectos vs\\racoca-dswi\\racoca-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|d:\\proyectos vs\\racoca-dswi\\racoca-dswi\\views\\registro\\tipodeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\registro\\tipodeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|d:\\proyectos vs\\racoca-dswi\\racoca-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Racoca-DSWI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-01T04:26:56.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T03:58:15.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Racoca-DSWI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:43:32.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "RelativeToolTip": "Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:27:11.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoDeUsuario.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Racoca-DSWI\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "RelativeToolTip": "Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T03:24:00.78Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
