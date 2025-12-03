@@ -1,0 +1,76 @@
+@model Racoca_DSWI.Models.Voluntario
+@{
+    ViewData["Title"] = "Paso3";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card px-5 py-4" style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+        <div class="mb-1">
+            <form asp-action="VolverPaso2" method="post" class="d-inline">
+                <input type="hidden" asp-for="Nombre" />
+                <input type="hidden" asp-for="Apellido" />
+                <input type="hidden" asp-for="Celular" />
+                <input type="hidden" asp-for="Cuidad" />
+                <input type="hidden" asp-for="Distrito" />
+                <input type="hidden" asp-for="FechaNacimiento" />
+                <input type="hidden" asp-for="MayorDeEdad" />
+                <input type="hidden" asp-for="Habilidades" />
+                @foreach (var act in Model.ActividadesSeleccionadas ?? new List<string>())
+                {
+                    <input type="hidden" name="ActividadesSeleccionadas" value="@act" />
+                }
+                <button type="submit" class="btn btn-link p-0 text-dark small" style="text-decoration:none;">Regresa</button>
+            </form>
+        </div>
+
+        <h4 class="text-center mb-2" style="font-weight: 600;">Crear cuenta</h4>
+        <p class="text-center">Estás a solo un paso…</p>
+
+        <form asp-action="Paso3" method="post" class="d-inline">
+            <input type="hidden" asp-for="Nombre" />
+            <input type="hidden" asp-for="Apellido" />
+            <input type="hidden" asp-for="Celular" />
+            <input type="hidden" asp-for="Cuidad" />
+            <input type="hidden" asp-for="Distrito" />
+            <input type="hidden" asp-for="FechaNacimiento" />
+            <input type="hidden" asp-for="MayorDeEdad" />
+            <input type="hidden" asp-for="Habilidades" />
+            @foreach (var act in Model.ActividadesSeleccionadas ?? new List<string>())
+            {
+                <input type="hidden" name="ActividadesSeleccionadas" value="@act" />
+            }
+
+            <div class="mb-3">
+                <input asp-for="Email" class="form-control" style="padding:10px;" type="email" placeholder="Correo" />
+            </div>
+
+            <div class="mb-3">
+                <div class="input-group">
+                    <input asp-for="Password" class="form-control" style="padding:10px;" type="password" id="pwdInput" placeholder="Contraseña" />
+                    <button type="button" class="btn btn-racacoca-negro" onclick="togglePwd()" aria-label="Mostrar u ocultar contraseña">???</button>
+                </div>
+            </div>
+
+            <div class="form-check mb-2">
+                <input asp-for="AceptoTerminos" class="form-check-input" />
+                <label asp-for="AceptoTerminos" class="form-check-label">Acepto términos y condiciones</label>
+            </div>
+            <div class="form-check mb-4">
+                <input asp-for="AceptoPrivacidad" class="form-check-input" />
+                <label asp-for="AceptoPrivacidad" class="form-check-label">Acepto la política de privacidad</label>
+            </div>
+
+            <button type="submit" class="btn btn-racacoca-negro w-100 py-2" style="font-size: 1rem;">Crear cuenta de voluntario</button>
+            <p class="text-center mt-3 small" style="margin-bottom:0;">3/3</p>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+<script>
+    function togglePwd(){
+        const i = document.getElementById('pwdInput');
+        i.type = i.type === 'password' ? 'text' : 'password';
+    }
+</script>
+}

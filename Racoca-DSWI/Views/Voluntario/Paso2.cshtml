@@ -1,0 +1,48 @@
+@model Racoca_DSWI.Models.Voluntario
+@{
+    ViewData["Title"] = "Paso2";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card px-5 py-4" style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+        <div class="mb-1">
+            <form asp-action="VolverPaso1" method="post" class="d-inline">
+                <input type="hidden" asp-for="Nombre" />
+                <input type="hidden" asp-for="Apellido" />
+                <input type="hidden" asp-for="Celular" />
+                <input type="hidden" asp-for="Cuidad" />
+                <input type="hidden" asp-for="Distrito" />
+                <input type="hidden" asp-for="FechaNacimiento" />
+                <input type="hidden" asp-for="MayorDeEdad" />
+
+                <button type="submit" class="btn btn-link p-0 text-dark small" style="text-decoration:none;">Regresa</button>
+            </form>
+        </div>
+
+        <h4 class="text-center mb-4" style="font-weight: 600;">Tus habilidades</h4>
+        <p class="text-center">Hola @Model.Nombre @Model.Apellido, usaremos estos datos solo para coordinar actividades del voluntariado.</p>
+
+        <form asp-action="Paso2" method="post" class="d-inline">
+            <input type="hidden" asp-for="Nombre" />
+            <input type="hidden" asp-for="Apellido" />
+            <input type="hidden" asp-for="Celular" />
+            <input type="hidden" asp-for="Cuidad" />
+            <input type="hidden" asp-for="Distrito" />
+            <input type="hidden" asp-for="FechaNacimiento" />
+            <input type="hidden" asp-for="MayorDeEdad" />
+
+            <div class="mb-2">
+                <strong>Escoge mínimo 3 actividades:</strong>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Cocinar" id="act1"><label class="form-check-label" for="act1">Cocinar</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Limpieza" id="act2"><label class="form-check-label" for="act2">Limpieza</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Atención al público" id="act3"><label class="form-check-label" for="act3">Atención al público</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Organizador" id="act4"><label class="form-check-label" for="act4">Organizador</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Creatividad" id="act5"><label class="form-check-label" for="act5">Creatividad</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="ActividadesSeleccionadas" value="Liderazgo" id="act6"><label class="form-check-label" for="act6">Liderazgo</label></div>
+            </div>
+
+            <button type="submit" class="btn btn-racacoca-negro w-100 py-2" style="font-size: 1rem;">Continuar</button>
+            <p class="text-center mt-3 small" style="margin-bottom:0;">2/3</p>
+        </form>
+    </div>
+</div>
