@@ -1,0 +1,200 @@
+﻿@model Racoca_DSWI.Models.Organizacion
+
+@{
+    ViewData["Title"] = "Paso3";
+}
+
+<div class="container d-flex justify-content-center align-items-center"
+     style="min-height: 100vh;">
+
+    <div class="card px-5 py-4"
+         style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+
+        <div class="mb-1">
+            <form asp-action="VolverPaso2" method="post" class="d-inline">
+                <input type="hidden" asp-for="NombreResponsable" />
+                <input type="hidden" asp-for="ApellidoResponsable" />
+                <input type="hidden" asp-for="CelularResponsable" />
+                <input type="hidden" asp-for="CorreoResponsable" />
+                <input type="hidden" asp-for="Contrasena" />
+                <input type="hidden" asp-for="EsMayorDeEdad" />
+
+                <input type="hidden" asp-for="NombreOrganizacion" />
+                <input type="hidden" asp-for="TipoOrganizacion" />
+                <input type="hidden" asp-for="DescripcionCorta" />
+
+                <button type="submit"
+                        class="btn btn-link p-0 text-dark small"
+                        style="text-decoration:none;">
+                    Regresa
+                </button>
+            </form>
+        </div>
+
+
+        <h4 class="text-center mb-4" style="font-weight: 600;">
+            Contacto público
+        </h4>
+
+        <form asp-action="Paso3" method="post" class="d-inline">
+
+            <input type="hidden" asp-for="NombreResponsable" />
+            <input type="hidden" asp-for="ApellidoResponsable" />
+            <input type="hidden" asp-for="CelularResponsable" />
+            <input type="hidden" asp-for="CorreoResponsable" />
+            <input type="hidden" asp-for="Contrasena" />
+            <input type="hidden" asp-for="EsMayorDeEdad" />
+
+            <input type="hidden" asp-for="NombreOrganizacion" />
+            <input type="hidden" asp-for="TipoOrganizacion" />
+            <input type="hidden" asp-for="DescripcionCorta" />
+
+            <div class="mb-3">
+                <input asp-for="CorreoPublico"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Correo público de contacto (*)"
+                       required />
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="CelularPublico"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Celular de contacto (*)"
+                       required />
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input asp-for="Ciudad"
+                           class="form-control"
+                           style="padding:10px;"
+                           placeholder="Ciudad (*)"
+                           required />
+                </div>
+                <div class="col-6">
+                    <input asp-for="Distrito"
+                           class="form-control"
+                           style="padding:10px;"
+                           placeholder="Distrito (*)"
+                           required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="Direccion"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Dirección" />
+            </div>
+
+            <div class="mb-2">
+                <span class="d-block mb-1" style="font-weight: 500;">
+                    Redes sociales
+                </span>
+
+                <div class="form-check form-check-inline">
+                    <input asp-for="UsaFacebook"
+                           class="form-check-input"
+                           id="checkFb" />
+                    <label class="form-check-label" for="checkFb">
+                        FB
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input asp-for="UsaInstagram"
+                           class="form-check-input"
+                           id="checkIg" />
+                    <label class="form-check-label" for="checkIg">
+                        IG
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input asp-for="UsaTikTok"
+                           class="form-check-input"
+                           id="checkTt" />
+                    <label class="form-check-label" for="checkTt">
+                        TT
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input asp-for="UsaThreads"
+                           class="form-check-input"
+                           id="checkX" />
+                    <label class="form-check-label" for="checkX">
+                        X
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-2" id="grupoFb" style="display:none;">
+                <input asp-for="LinkFacebook"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Ingresa tu link de Facebook" />
+            </div>
+
+            <div class="mb-2" id="grupoIg" style="display:none;">
+                <input asp-for="LinkInstagram"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Ingresa tu link de Instagram" />
+            </div>
+
+            <div class="mb-2" id="grupoTt" style="display:none;">
+                <input asp-for="LinkTikTok"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Ingresa tu link de TikTok" />
+            </div>
+
+            <div class="mb-3" id="grupoX" style="display:none;">
+                <input asp-for="LinkThreads"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Ingresa tu link de Threads" />
+            </div>
+
+            <button type="submit"
+                    class="btn btn-racacoca-negro w-100 py-2 mt-3"
+                    style="font-size: 1rem;">
+                Crear cuenta de voluntario
+            </button>
+
+            <p class="text-center mt-3 small" style="margin-bottom:0;">3/4</p>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleRedes() {
+        const fb = document.getElementById("checkFb");
+        const ig = document.getElementById("checkIg");
+        const tt = document.getElementById("checkTt");
+        const x = document.getElementById("checkX");
+
+        document.getElementById("grupoFb").style.display = fb.checked ? "block" : "none";
+        document.getElementById("grupoIg").style.display = ig.checked ? "block" : "none";
+        document.getElementById("grupoTt").style.display = tt.checked ? "block" : "none";
+        document.getElementById("grupoX").style.display = x.checked ? "block" : "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const fb = document.getElementById("checkFb");
+        const ig = document.getElementById("checkIg");
+        const tt = document.getElementById("checkTt");
+        const x = document.getElementById("checkX");
+
+        fb.addEventListener("change", toggleRedes);
+        ig.addEventListener("change", toggleRedes);
+        tt.addEventListener("change", toggleRedes);
+        x.addEventListener("change", toggleRedes);
+
+        toggleRedes(); 
+    });
+</script>

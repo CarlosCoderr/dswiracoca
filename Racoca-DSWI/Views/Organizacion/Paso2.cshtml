@@ -1,0 +1,153 @@
+﻿@model Racoca_DSWI.Models.Organizacion
+
+@{
+    ViewData["Title"] = "Paso2";
+}
+
+<div class="container d-flex justify-content-center align-items-center"
+     style="min-height: 100vh;">
+
+    <div class="card px-5 py-4"
+         style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+
+        <div class="mb-1">
+            <form asp-action="VolverPaso1" method="post" class="d-inline">
+                <input type="hidden" asp-for="NombreResponsable" />
+                <input type="hidden" asp-for="ApellidoResponsable" />
+                <input type="hidden" asp-for="CelularResponsable" />
+                <input type="hidden" asp-for="CorreoResponsable" />
+                <input type="hidden" asp-for="Contrasena" />
+                <input type="hidden" asp-for="EsMayorDeEdad" />
+
+                <button type="submit"
+                        class="btn btn-link p-0 text-dark small"
+                        style="text-decoration:none;">
+                    Regresa
+                </button>
+            </form>
+        </div>
+
+
+        <h4 class="text-center mb-4" style="font-weight: 600;">
+            Datos de la organización
+        </h4>
+
+        <form asp-action="Paso2" method="post" class="d-inline" enctype="multipart/form-data">
+
+            <input type="hidden" asp-for="NombreResponsable" />
+            <input type="hidden" asp-for="ApellidoResponsable" />
+            <input type="hidden" asp-for="CelularResponsable" />
+            <input type="hidden" asp-for="CorreoResponsable" />
+            <input type="hidden" asp-for="Contrasena" />
+            <input type="hidden" asp-for="EsMayorDeEdad" />
+
+            <div class="mb-3">
+
+                <div id="labelInicial"
+                     class="p-3 mb-2"
+                     style="background:#f0f0f0; border:1px solid #ccc; border-radius:8px; cursor:pointer;"
+                     onclick="mostrarInputArchivo()">
+                    Foto de la organización (*)
+                </div>
+
+                <div id="grupoArchivo" style="display:none;">
+                    <div class="input-group">
+                        <input id="nombreArchivo"
+                               type="text"
+                               class="form-control select-racoca"
+                               placeholder="Foto de la organización (*)"
+                               readonly />
+
+                        <button type="button"
+                                class="btn btn-racacoca-negro"
+                                onclick="document.getElementById('fileInput').click();">
+                            Seleccionar
+                        </button>
+
+                        <input asp-for="FotoOrganizacion"
+                               type="file"
+                               accept="image/*"
+                               id="fileInput"
+                               style="display:none;" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2 text-center mb-3">
+                <img id="previewImg" src="#"
+                     style="max-width: 100%; display:none; border-radius:8px; border:1px solid #ddd;" />
+            </div>
+
+
+            <div class="mb-3">
+                <input asp-for="NombreOrganizacion"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Nombre de la organización (*)"
+                       required />
+            </div>
+
+            <div class="mb-3">
+                <select asp-for="TipoOrganizacion"
+                        class="form-control"
+                        style="padding:10px; background-color:#f8f9fa; border:1px solid #ced4da; color:#495057;"
+                        required>
+                    <option value="">Tipo de organización (*)</option>
+                    <option>Nutrición</option>
+                    <option>Educación</option>
+                    <option>Salud</option>
+                    <option>Arte</option>
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+                <textarea asp-for="DescripcionCorta"
+                          class="form-control"
+                          style="padding:10px; height:100px;"
+                          placeholder="Descripción corta (*)"
+                          required></textarea>
+            </div>
+
+             <button type="submit"
+                    class="btn btn-racacoca-negro w-100 py-2"
+                    style="font-size: 1rem;">
+                Continuar
+            </button>
+
+            <p class="text-center mt-3 small">2/4</p>
+
+        </form>
+
+    </div>
+</div>
+
+<script>
+
+    function mostrarInputArchivo() {
+        document.getElementById("labelInicial").style.display = "none";
+        document.getElementById("grupoArchivo").style.display = "block";
+    }
+
+    const fileInput = document.getElementById("fileInput");
+    const nombreArchivo = document.getElementById("nombreArchivo");
+    const previewImg = document.getElementById("previewImg");
+
+    fileInput.addEventListener("change", function () {
+        const archivo = this.files[0];
+
+        if (archivo) {
+            nombreArchivo.value = archivo.name;
+
+            if (archivo.type.startsWith("image/")) {
+                const lector = new FileReader();
+                lector.onload = function (e) {
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = "block";
+                };
+                lector.readAsDataURL(archivo);
+            }
+        }
+    });
+
+</script>

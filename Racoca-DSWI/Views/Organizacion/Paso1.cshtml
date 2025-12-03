@@ -1,0 +1,80 @@
+﻿@model Racoca_DSWI.Models.Organizacion
+
+@{
+    ViewData["Title"] = "Paso1";
+}
+
+
+<div class="container d-flex justify-content-center align-items-center"
+     style="min-height: 100vh;">
+
+    <div class="card px-5 py-4"
+         style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+
+        <div class="mb-1">
+            <a href="javascript:history.back()"
+               class="text-decoration-none text-dark small">
+                Regresa
+            </a>
+        </div>
+
+        <h4 class="text-center mb-4" style="font-weight: 600;">
+            Cuenta del responsable
+        </h4>
+
+        <form asp-action="Paso1" method="post" class="d-inline">
+
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input asp-for="NombreResponsable"
+                           class="form-control"
+                           style="padding:10px;"
+                           placeholder="Nombre (*)" required />
+                </div>
+                <div class="col-6">
+                    <input asp-for="ApellidoResponsable"
+                           class="form-control"
+                           style="padding:10px;"
+                           placeholder="Apellido (*)" required />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="CelularResponsable"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Celular (*)" required />
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="CorreoResponsable"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Correo (*)" required />
+            </div>
+
+            <div class="mb-3">
+                <input asp-for="Contrasena" type="password"
+                       class="form-control"
+                       style="padding:10px;"
+                       placeholder="Contraseña (*)" required />
+            </div>
+
+            <div class="form-check mb-4">
+                <input asp-for="EsMayorDeEdad" class="form-check-input" required />
+                <label asp-for="EsMayorDeEdad" class="form-check-label">
+                    Soy mayor de edad
+                </label>
+            </div>
+
+            <button type="submit"
+                    class="btn btn-racacoca-negro w-100 py-2"
+                    style="font-size: 1rem;">
+                Continuar
+            </button>
+
+            <p class="text-center mt-3 small" style="margin-bottom:0;">1/4</p>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿@model Racoca_DSWI.Models.Organizacion
+
+@{
+    ViewData["Title"] = "Paso4";
+}
+
+<div class="container d-flex justify-content-center align-items-center"
+     style="min-height: 100vh;">
+
+    <div class="card px-5 py-4"
+         style="width: 520px; border-radius: 24px; border: 1px solid #eee; box-shadow:none;">
+
+        <div class="mb-1">
+            <form asp-action="VolverPaso3" method="post" class="d-inline">
+                <input type="hidden" asp-for="NombreResponsable" />
+                <input type="hidden" asp-for="ApellidoResponsable" />
+                <input type="hidden" asp-for="CelularResponsable" />
+                <input type="hidden" asp-for="CorreoResponsable" />
+                <input type="hidden" asp-for="Contrasena" />
+                <input type="hidden" asp-for="EsMayorDeEdad" />
+                <input type="hidden" asp-for="NombreOrganizacion" />
+                <input type="hidden" asp-for="TipoOrganizacion" />
+                <input type="hidden" asp-for="DescripcionCorta" />
+                <input type="hidden" asp-for="CorreoPublico" />
+                <input type="hidden" asp-for="CelularPublico" />
+                <input type="hidden" asp-for="Ciudad" />
+                <input type="hidden" asp-for="Distrito" />
+                <input type="hidden" asp-for="Direccion" />
+
+                <input type="hidden" asp-for="UsaFacebook" />
+                <input type="hidden" asp-for="UsaInstagram" />
+                <input type="hidden" asp-for="UsaTikTok" />
+                <input type="hidden" asp-for="UsaThreads" />
+
+                <input type="hidden" asp-for="LinkFacebook" />
+                <input type="hidden" asp-for="LinkInstagram" />
+                <input type="hidden" asp-for="LinkTikTok" />
+                <input type="hidden" asp-for="LinkThreads" />
+
+                <button type="submit"
+                        class="btn btn-link p-0 text-dark small"
+                        style="text-decoration:none;">
+                    Regresa
+                </button>
+            </form>
+        </div>
+
+
+        <h4 class="text-center mb-4" style="font-weight: 600;">
+            Verificación y términos
+        </h4>
+
+        <form asp-action="Paso4" method="post" class="d-inline">
+
+           
+            <input type="hidden" asp-for="NombreResponsable" />
+            <input type="hidden" asp-for="ApellidoResponsable" />
+            <input type="hidden" asp-for="CelularResponsable" />
+            <input type="hidden" asp-for="CorreoResponsable" />
+            <input type="hidden" asp-for="Contrasena" />
+            <input type="hidden" asp-for="EsMayorDeEdad" />
+
+            <input type="hidden" asp-for="NombreOrganizacion" />
+            <input type="hidden" asp-for="TipoOrganizacion" />
+            <input type="hidden" asp-for="DescripcionCorta" />
+
+            <input type="hidden" asp-for="CorreoPublico" />
+            <input type="hidden" asp-for="CelularPublico" />
+            <input type="hidden" asp-for="Ciudad" />
+            <input type="hidden" asp-for="Distrito" />
+            <input type="hidden" asp-for="Direccion" />
+
+            <input type="hidden" asp-for="UsaFacebook" />
+            <input type="hidden" asp-for="UsaInstagram" />
+            <input type="hidden" asp-for="UsaTikTok" />
+            <input type="hidden" asp-for="UsaThreads" />
+
+            <input type="hidden" asp-for="LinkFacebook" />
+            <input type="hidden" asp-for="LinkInstagram" />
+            <input type="hidden" asp-for="LinkTikTok" />
+            <input type="hidden" asp-for="LinkThreads" />
+
+            <div class="mb-4 p-3"
+                 style="background:#f8f9fa; border-radius:10px; border:1px solid #e0e0e0; font-size:0.95rem;">
+                <p class="mb-1">
+                    <strong>Organización:</strong> @Model.NombreOrganizacion
+                </p>
+                <p class="mb-1">
+                    <strong>Tipo de organización:</strong> @Model.TipoOrganizacion
+                </p>
+                <p class="mb-1">
+                    <strong>Ciudad / Distrito:</strong> @Model.Ciudad / @Model.Distrito
+                </p>
+                <p class="mb-1">
+                    <strong>Cuenta del responsable:</strong>
+                    @Model.NombreResponsable @Model.ApellidoResponsable
+                </p>
+              
+            </div>
+
+            <div class="form-check mb-2">
+                <input asp-for="AceptoTerminos" class="form-check-input" id="chkTerminos" required />
+                <label class="form-check-label" for="chkTerminos">
+                    Acepto los términos como organización (*)
+                </label>
+            </div>
+
+            <div class="form-check mb-4">
+                <input asp-for="AutorizaDatos" class="form-check-input" id="chkDatos" required />
+                <label class="form-check-label" for="chkDatos">
+                    Autorizo el uso de mis datos para la gestión de voluntariado (*)
+                </label>
+            </div>
+
+            <button type="submit"
+                    class="btn btn-racacoca-negro w-100 py-2"
+                    style="font-size: 1rem;">
+                Crear cuenta de organización
+            </button>
+
+            <p class="text-center mt-3 small" style="margin-bottom:0;">4/4</p>
+        </form>
+    </div>
+</div>

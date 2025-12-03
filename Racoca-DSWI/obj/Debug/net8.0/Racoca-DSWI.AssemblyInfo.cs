@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Racoca-DSWI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+927d59b41a33bf9c05ed9d70f111ef5d21fadcaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Racoca-DSWI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Racoca-DSWI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

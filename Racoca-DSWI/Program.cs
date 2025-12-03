@@ -1,7 +1,11 @@
+using Racoca_DSWI.Data;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<OrganizacionRepository>();
 
 var app = builder.Build();
 
