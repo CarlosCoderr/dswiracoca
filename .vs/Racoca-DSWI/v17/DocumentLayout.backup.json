@@ -1,57 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\",
+  "WorkspaceRootPath": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\organizacion\\paso4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\eventos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\eventos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\organizacion\\paso3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\organizacion\\paso2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\data\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\data\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\organizacion\\paso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\controllers\\organizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\organizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\models\\organizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\organizacion\\paso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\organizacion\\paso2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\organizacion\\paso3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\organizacion\\paso4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\organizacion\\paso4.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\models\\organizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\models\\organizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\registro\\tipodeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\controllers\\organizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\organizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\registro\\tipodeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\registro\\tipodeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\data\\organizacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\data\\organizacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\data\\organizacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\racoca-dswi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\racoca-dswi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\racoca-dswi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\downloads\\dwiracoca\\racoca-dswi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|c:\\users\\rscm_\\source\\repos\\dswiracoca\\racoca-dswi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{218FAA66-FA4A-42E9-B7CF-17E6E6CE1C69}|Racoca-DSWI\\Racoca-DSWI.csproj|solutionrelative:racoca-dswi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -62,66 +74,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Paso4.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
-              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
-              "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAkwDQAAAA+AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Eventos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Eventos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Eventos\\Index.cshtml",
+              "RelativeToolTip": "Racoca-DSWI\\Views\\Eventos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T03:56:05.677Z",
+              "WhenOpened": "2025-12-08T12:42:21.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Models\\Evento.cs",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Models\\Evento.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Models\\Evento.cs",
+              "RelativeToolTip": "Racoca-DSWI\\Models\\Evento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T12:41:59.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Paso2.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
-              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml*",
-              "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T03:14:00.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrganizacionController.cs",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\OrganizacionController.cs",
-              "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\OrganizacionController.cs",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\OrganizacionController.cs",
-              "RelativeToolTip": "Racoca-DSWI\\Controllers\\OrganizacionController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEAAAAAAAAAAAAAAAA==",
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Data\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Data\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Data\\EventoRepository.cs",
+              "RelativeToolTip": "Racoca-DSWI\\Data\\EventoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T02:44:35.013Z",
+              "WhenOpened": "2025-12-08T12:41:47.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Racoca-DSWI.csproj",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
-              "RelativeDocumentMoniker": "Racoca-DSWI\\Racoca-DSWI.csproj",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
-              "RelativeToolTip": "Racoca-DSWI\\Racoca-DSWI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-03T01:38:17.907Z"
+              "DocumentIndex": 9,
+              "Title": "OrganizacionController.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\OrganizacionController.cs",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\OrganizacionController.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\OrganizacionController.cs",
+              "RelativeToolTip": "Racoca-DSWI\\Controllers\\OrganizacionController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T02:44:35.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Racoca-DSWI\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Racoca-DSWI\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -129,11 +145,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Racoca-DSWI\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -141,11 +157,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Racoca-DSWI\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -154,24 +170,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Paso3.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
               "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso3.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T03:46:28.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T03:46:28.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Paso1.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
               "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso1.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAcwBgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -180,24 +195,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Organizacion.cs",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Models\\Organizacion.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Models\\Organizacion.cs",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Models\\Organizacion.cs",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Models\\Organizacion.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Models\\Organizacion.cs",
               "RelativeToolTip": "Racoca-DSWI\\Models\\Organizacion.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAMwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T01:43:20.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T01:43:20.119Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Paso4.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
+              "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso4.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwDQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T03:56:05.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Paso2.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
+              "RelativeToolTip": "Racoca-DSWI\\Views\\Organizacion\\Paso2.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T03:14:00.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Racoca-DSWI.csproj",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
+              "RelativeDocumentMoniker": "Racoca-DSWI\\Racoca-DSWI.csproj",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
+              "RelativeToolTip": "Racoca-DSWI\\Racoca-DSWI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-03T01:38:17.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "TipoDeUsuario.cshtml",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
               "RelativeToolTip": "Racoca-DSWI\\Views\\Registro\\TipoDeUsuario.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -205,11 +255,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "OrganizacionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Data\\OrganizacionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Data\\OrganizacionRepository.cs",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Data\\OrganizacionRepository.cs",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Data\\OrganizacionRepository.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Data\\OrganizacionRepository.cs",
               "RelativeToolTip": "Racoca-DSWI\\Data\\OrganizacionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,11 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RegistroController.cs",
-              "DocumentMoniker": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "DocumentMoniker": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\RegistroController.cs",
               "RelativeDocumentMoniker": "Racoca-DSWI\\Controllers\\RegistroController.cs",
-              "ToolTip": "C:\\Users\\rscm_\\Downloads\\dwiRacoca\\Racoca-DSWI\\Controllers\\RegistroController.cs",
+              "ToolTip": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Controllers\\RegistroController.cs",
               "RelativeToolTip": "Racoca-DSWI\\Controllers\\RegistroController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
