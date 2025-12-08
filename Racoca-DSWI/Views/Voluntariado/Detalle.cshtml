@@ -1,0 +1,226 @@
+﻿@{
+    ViewData["Title"] = "Detalle del voluntariado";
+}
+
+<div class="container" style="max-width: 1120px;">
+    <!-- Galería: 3 imágenes en la misma fila (cuadradas) -->
+    <div class="row g-2 mt-3">
+        <div class="col-12 col-md-4">
+            <div class="ratio ratio-1x1 rounded-3 overflow-hidden border shadow-sm">
+                <img src="~/imagenes/voluntariado/principal.jpg" alt="Imagen principal" class="w-100 h-100 object-fit-cover">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="ratio ratio-1x1 rounded-3 overflow-hidden border shadow-sm">
+                <img src="~/imagenes/voluntariado/imagen2.jpg" alt="Imagen 2" class="w-100 h-100 object-fit-cover">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="ratio ratio-1x1 rounded-3 overflow-hidden border shadow-sm position-relative">
+                <img src="~/imagenes/voluntariado/imagen3.jpg" alt="Imagen 3" class="w-100 h-100 object-fit-cover">
+                <button type="button" class="btn position-absolute d-flex align-items-center justify-content-center shadow"
+                        style="top:50%; left:50%; transform:translate(-50%, -50%); padding:8px 14px; border-radius:22px; background:rgba(0,0,0,0.5); color:#fff;"
+                        data-bs-toggle="modal" data-bs-target="#modalGaleria">
+                    <span class="material-icons-outlined me-2" style="font-size:20px;">photo_library</span>
+                    Ver todas las fotos
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal galería completa (sin repetir principal, imagen2 ni imagen3) -->
+    <div class="modal fade" id="modalGaleria" tabindex="-1" aria-labelledby="modalGaleriaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGaleriaLabel">Fotos del evento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-2">
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen4.jpg" alt="Imagen 4" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen5.jpg" alt="Imagen 5" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen6.jpg" alt="Imagen 6" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagenes7.jpg" alt="Imagen 7" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen8.jpg" alt="Imagen 8" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen9.jpg" alt="Imagen 9" class="w-100 h-100 object-fit-cover"></div></div>
+                            <div class="col"><div class="ratio ratio-16x9 rounded-3 overflow-hidden border shadow-sm"><img src="~/imagenes/voluntariado/imagen10.jpg" alt="Imagen 10" class="w-100 h-100 object-fit-cover"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <div class="mt-4">
+        <h2 class="mb-1" style="font-weight: 700;">Limpieza de playa en Costa Verde</h2>
+        <div class="text-muted">Miraflores, Lima, Perú · Evento ambiental</div>
+    </div>
+
+    <hr class="my-4" />
+
+    <div class="row">
+        <!-- Columna izquierda: detalles del evento -->
+        <div class="col-12 col-lg-7">
+            <!-- Resumen del anfitrión / organización -->
+            <div class="d-flex align-items-center mb-3">
+                <img src="~/imagenes/voluntariado/host.jpg" alt="Organizador" class="rounded-circle" style="width:56px;height:56px;object-fit:cover;">
+                <div class="ms-3">
+                    <div class="fw-semibold"><span class="material-icons-outlined align-middle me-1" style="font-size:20px;">badge</span>Organizado por Dammi</div>
+                    <div class="text-muted small">5 años organizando voluntariados · Responde en horas</div>
+                </div>
+            </div>
+
+            <!-- Bloques de información -->
+            <div class="mb-4">
+                <h5 class="fw-semibold">Sobre el evento</h5>
+                <p class="mb-2">Únete a nuestra jornada de limpieza en la Costa Verde para ayudar a mantener nuestras playas libres de residuos. Proporcionamos guantes, bolsas y orientación.</p>
+                <ul class="mb-0">
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">calendar_month</span>Fecha: Sábado 10 de enero, 8:00 AM - 12:00 PM</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">place</span>Punto de encuentro: Parque Intihuatana, Miraflores</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">groups</span>Capacidad: 50 voluntarios</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold">Qué harás</h5>
+                <ul class="mb-0">
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">cleaning_services</span>Recojo de residuos y clasificación básica</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">campaign</span>Concientización a visitantes sobre cuidado del entorno</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">assignment</span>Registro de residuos recolectados para reporte municipal</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold">Qué incluye</h5>
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+                    <div class="col"><div class="border rounded-3 p-3"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">shopping_bag</span>Guantes y bolsas</div></div>
+                    <div class="col"><div class="border rounded-3 p-3"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">local_drink</span>Agua y snacks</div></div>
+                    <div class="col"><div class="border rounded-3 p-3"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">health_and_safety</span>Seguro contra accidentes</div></div>
+                    <div class="col"><div class="border rounded-3 p-3"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">workspace_premium</span>Certificado de participación</div></div>
+                    <div class="col"><div class="border rounded-3 p-3"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">menu_book</span>Kit informativo</div></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold">Requisitos</h5>
+                <ul class="mb-0">
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">verified_user</span>Ser mayor de edad o asistir con tutor</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">badge</span>Contar con DNI</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">handshake</span>Ganas de ayudar y respeto por el equipo</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">hiking</span>Calzado cómodo y ropa adecuada</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">vaccines</span>Estar en buen estado de salud</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">email</span>Correo válido para confirmación</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">security</span>Aceptar políticas de seguridad y privacidad</li>
+                    <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">schedule</span>Disponibilidad en el horario indicado</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Columna derecha: tarjeta de inscripción -->
+        <div class="col-12 col-lg-5">
+            <div class="border rounded-3 p-4 sticky-top" style="top: 84px;">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <div>
+                        <div class="fw-semibold">Inscripción gratuita</div>
+                        <div class="text-muted small">Cupos limitados</div>
+                    </div>
+                    <div class="text-muted small">4.8 ★ (132)</div>
+                </div>
+
+                <form method="post" action="/Voluntariado/Inscribirse" class="mt-3">
+                    <div class="mb-2">
+                        <label class="form-label"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">calendar_month</span>Fecha</label>
+                        <div class="form-control bg-light">10/01/2025</div>
+                        <input type="hidden" name="fecha" value="2025-01-10" />
+                    </div>
+
+                    <div class="row g-2 mb-2">
+                        <div class="col-6">
+                            <label class="form-label"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">schedule</span>Desde</label>
+                            <input type="time" class="form-control" name="desde" value="08:00">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">schedule</span>Hasta</label>
+                            <input type="time" class="form-control" name="hasta" value="12:00">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">group_add</span>Participantes</label>
+                        <select class="form-select" name="participantes">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">Inscribirme</button>
+
+                    <div class="small text-muted mt-2">No hay costo de participación. Te enviaremos un correo con la confirmación.</div>
+                </form>
+
+                <hr class="my-4" />
+
+                <div>
+                    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-77.03115731477739%2C-12.12149584481231%2C-77.02864676713945%2C-12.119725713614175&amp;layer=mapnik" style="border: 1px solid black"></iframe><br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección "lo que debes saber" -->
+    <hr class="my-4" />
+    <div class="row">
+        <div class="col-12 col-lg-7">
+            <h5 class="fw-semibold">Lo que debes saber</h5>
+            <ul>
+                <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">schedule</span>Llega 15 minutos antes para la inducción</li>
+                <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">sunny</span>Usa bloqueador y gorra</li>
+                <li><span class="material-icons-outlined align-middle me-1" style="font-size:18px;">report_gmailerrorred</span>Evita llevar objetos de valor</li>
+            </ul>
+        </div>
+        <div class="col-12 col-lg-5"></div>
+    </div>
+
+    <!-- Más eventos de Dammi -->
+    <hr class="my-4" />
+    <div>
+        <h5 class="fw-semibold">Más eventos de Dammi</h5>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <a class="text-decoration-none text-dark" href="#">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden mb-2">
+                        <img src="~/imagenes/voluntariado/evento1.jpg" alt="Evento relacionado" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="fw-semibold">Reforestación en Lurín</div>
+                    <div class="text-muted small">Lurín · Ambiental</div>
+                </a>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none text-dark" href="#">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden mb-2">
+                        <img src="~/imagenes/voluntariado/evento2.jpg" alt="Evento relacionado" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="fw-semibold">Apoyo en comedor popular</div>
+                    <div class="text-muted small">Villa El Salvador · Social</div>
+                </a>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none text-dark" href="#">
+                    <div class="ratio ratio-4x3 rounded-3 overflow-hidden mb-2">
+                        <img src="~/imagenes/voluntariado/evento3.jpg" alt="Evento relacionado" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="fw-semibold">Rescate de mascotas</div>
+                    <div class="text-muted small">Surco · Animalista</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
