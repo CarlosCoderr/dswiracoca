@@ -1,0 +1,75 @@
+﻿@model Proyecto_DSWI.Models.RegistroOrganizacionPaso3VM
+@{
+    ViewData["Title"] = "Registro Organización - Paso 3";
+}
+
+<div class="container mt-4" style="max-width:520px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a class="btn btn-link p-0" asp-action="OrganizacionPaso2">Regresa</a>
+        <div class="text-muted small">Pag. Registro Organización 3</div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="text-center mb-3">Contacto público</h5>
+
+            <form asp-action="OrganizacionPaso3" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+
+                <div class="mb-2">
+                    <label class="form-label">Correo público de contacto</label>
+                    <input asp-for="CorreoPublicoContacto" class="form-control" placeholder="contacto..." />
+                    <span asp-validation-for="CorreoPublicoContacto" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Celular</label>
+                    <input asp-for="CelularPublico" class="form-control" placeholder="Ej. 999999999" />
+                    <span asp-validation-for="CelularPublico" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-2">
+                    <select asp-for="Distrito" class="form-select">
+                        <option value="">Seleccione distrito</option>
+                        @foreach (var d in (List<DistritoModel>)ViewBag.Distritos)
+                        {
+                            <option value="@d.Nombre">@d.Nombre</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Dirección</label>
+                    <input asp-for="Direccion" class="form-control" placeholder="Av./Jr./Calle..." />
+                    <span asp-validation-for="Direccion" class="text-danger small"></span>
+                </div>
+
+                <hr class="my-3" />
+
+                <div class="mb-2">
+                    <label class="form-label">Facebook (URL)</label>
+                    <input asp-for="FacebookUrl" class="form-control" placeholder="https://facebook.com/..." />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Instagram (URL)</label>
+                    <input asp-for="InstagramUrl" class="form-control" placeholder="https://instagram.com/..." />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">TikTok (URL)</label>
+                    <input asp-for="TikTokUrl" class="form-control" placeholder="https://tiktok.com/..." />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Web (URL)</label>
+                    <input asp-for="WebUrl" class="form-control" placeholder="https://tusitio.com" />
+                </div>
+
+                <button class="btn btn-dark w-100 mt-3" type="submit">Continuar</button>
+                <div class="text-center text-muted mt-2">3/4</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

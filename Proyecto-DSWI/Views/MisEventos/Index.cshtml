@@ -1,0 +1,45 @@
+﻿@model List<Proyecto_DSWI.Models.MisEventoModel>
+@{
+    ViewData["Title"] = "Mis Eventos";
+}
+
+<div class="container mt-4">
+    <h4 class="mb-3">Mis eventos creados</h4>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Aún no has creado eventos.</div>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>Evento</th>
+                    <th>Fecha</th>
+                    <th>Distrito</th>
+                    <th>Inscritos</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in Model)
+                {
+                    <tr>
+                        <td>
+                            <a asp-controller="Eventos"
+                               asp-action="Detalle"
+                               asp-route-id="@e.EventoId">
+                                @e.Nombre
+                            </a>
+                        </td>
+                        <td>@e.FechaEvento.ToString("dd/MM/yyyy")</td>
+                        <td>@e.Distrito</td>
+                        <td>@e.TotalInscritos</td>
+                        <td>@e.Estado</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

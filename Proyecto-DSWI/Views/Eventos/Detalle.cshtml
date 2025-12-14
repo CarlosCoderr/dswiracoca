@@ -1,0 +1,111 @@
+﻿@model Proyecto_DSWI.Models.EventoDetalleModel
+@{
+    ViewData["Title"] = Model.Nombre;
+}
+
+<div class="container mt-4" style="max-width:1100px;">
+
+    <!-- TÍTULO -->
+    <h3>@Model.Nombre</h3>
+    <p class="text-muted">
+        @Model.Categoria · @Model.NombreOrganizacion
+    </p>
+
+    <!-- IMÁGENES -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <img src="@Model.ImagenPrincipal"
+                 class="img-fluid rounded"
+                 style="height:420px; width:100%; object-fit:cover;" />
+        </div>
+        <div class="col-md-4">
+            <div class="row g-2">
+                @foreach (var img in Model.ImagenesGaleria)
+                {
+                    <div class="col-6">
+                        <img src="@img"
+                             class="img-fluid rounded"
+                             style="height:200px; object-fit:cover;" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO + CTA -->
+    <div class="row">
+        <div class="col-md-8">
+
+            <h5>📍 Ubicación</h5>
+            <p>@Model.Distrito – @Model.Direccion</p>
+
+            <h5>📅 Fecha y hora</h5>
+            <p>
+                @Model.FechaEvento.ToString("dd/MM/yyyy")
+                · @Model.HoraEvento
+            </p>
+
+            <hr />
+
+            <h5>📝 Descripción</h5>
+            <p>@Model.DescripcionLarga</p>
+
+            @if (!string.IsNullOrWhiteSpace(Model.Requisitos))
+            {
+                <h5>✅ Requisitos</h5>
+                <p>@Model.Requisitos</p>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(Model.Incluye))
+            {
+                <h5>🎒 Incluye</h5>
+                <p>@Model.Incluye</p>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(Model.NoIncluye))
+            {
+                <h5>❌ No incluye</h5>
+                <p>@Model.NoIncluye</p>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(Model.MapaUrl))
+            {
+                <h5>🗺️ Mapa</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="@Model.MapaUrl"
+                            style="border:0;"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                </div>
+            }
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-md-4">
+            <div class="card shadow-sm sticky-top" style="top:80px;">
+                <div class="card-body">
+                    <h6 class="mb-2">Participa como voluntario</h6>
+
+                    <p class="small text-muted">
+                        Contacta directamente con la organización.
+                    </p>
+
+                    @if (!string.IsNullOrWhiteSpace(Model.WhatsappNumero))
+                    {
+                        <a target="_blank"
+                           href="https://wa.me/51@(Model.WhatsappNumero)"
+                           class="btn btn-success w-100">
+                            Contactar por WhatsApp
+                        </a>
+                    }
+                    else
+                    {
+                        <div class="alert alert-secondary small">
+                            Contacto no disponible.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

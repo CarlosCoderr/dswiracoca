@@ -1,0 +1,66 @@
+﻿@model Proyecto_DSWI.Models.RegistroVoluntarioPaso3VM
+@{
+    ViewData["Title"] = "Registro Voluntario - Paso 3";
+}
+
+<div class="container mt-4" style="max-width:520px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a class="btn btn-link p-0" asp-action="VoluntarioPaso2">Regresa</a>
+    </div>
+
+    <div class="card border-0">
+        <div class="card-body">
+            <h3 class="text-center mb-1">Crea cuenta</h3>
+            <p class="text-center text-muted small mb-3">Estás a solo un paso…</p>
+
+            <form asp-action="VoluntarioPaso3" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+
+                <div class="mb-2">
+                    <label class="form-label">Correo</label>
+                    <input asp-for="Email" class="form-control" placeholder="correo@ejemplo.com" />
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="input-group">
+                    <input asp-for="Password" type="password" class="form-control" id="passwordInput" />
+                    <button type="button" class="btn btn-outline-secondary"
+                            onclick="togglePassword()">
+                        👁
+                    </button>
+                </div>
+
+                <script>
+                    function togglePassword() {
+                        const input = document.getElementById("passwordInput");
+                        input.type = input.type === "password" ? "text" : "password";
+                    }
+                </script>
+
+
+                <div class="form-check mt-3">
+                    <input asp-for="AceptaTerminos" class="form-check-input" />
+                    <label asp-for="AceptaTerminos" class="form-check-label">
+                        Acepto Términos y Condiciones
+                    </label>
+                </div>
+                <span asp-validation-for="AceptaTerminos" class="text-danger small"></span>
+
+                <div class="form-check mt-2">
+                    <input asp-for="AceptaPrivacidad" class="form-check-input" />
+                    <label asp-for="AceptaPrivacidad" class="form-check-label">
+                        Acepto la Política de Privacidad
+                    </label>
+                </div>
+                <span asp-validation-for="AceptaPrivacidad" class="text-danger small"></span>
+
+                <button class="btn btn-dark w-100 mt-3" type="submit">Crear cuenta de voluntario</button>
+                <div class="text-center text-muted mt-2">3/3</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

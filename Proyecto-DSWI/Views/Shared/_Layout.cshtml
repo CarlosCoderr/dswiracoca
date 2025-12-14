@@ -1,0 +1,107 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Proyecto_DSWI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Proyecto_DSWI.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 w-100">
+            <div class="container">
+                <div class="row w-100 align-items-center g-3">
+
+                    <!-- LOGO (col 3) -->
+                    <div class="col-6 col-md-3 d-flex align-items-center">
+                        <a class="navbar-brand d-flex align-items-center" asp-controller="Home" asp-action="Index">
+                            <img src="~/uploads/Racoca.svg" alt="Racoca" style="height:30px;" />
+                        </a>
+                    </div>
+
+                    <!-- SEARCH (col 6) -->
+                    <div class="col-12 col-md-6 order-3 order-md-2">
+                        <form method="get" asp-controller="Home" asp-action="Buscar">
+                            <div class="input-group">
+                                <input type="search"
+                                       name="q"
+                                       class="form-control rounded"
+                                       placeholder="Buscar…"
+                                       aria-label="Buscar" />
+                                <button type="submit" class="btn btn-racacoca-anaranjado">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- BOTONES / USUARIO (col 3) -->
+                    @{
+                        var userNombre = Context.Session.GetString("USER_NOMBRE");
+                        var userFoto = Context.Session.GetString("USER_FOTO");
+                        var isLogged = !string.IsNullOrEmpty(userNombre);
+                    }
+
+                    <div class="col-6 col-md-3 d-flex justify-content-end gap-2 order-2 order-md-3 align-items-center">
+                        @if (!isLogged)
+                        {
+                            <a class="btn btn-racacoca-anaranjado-linea"
+                               asp-controller="IniciarSesion"
+                               asp-action="Index">
+                                Iniciar sesión
+                            </a>
+
+                            <a class="btn btn-racacoca-verde"
+                               asp-controller="Registro"
+                               asp-action="Index">
+                                Registrarse
+                            </a>
+                        }
+                        else
+                        {
+                            <div class="d-flex align-items-center gap-2">
+                                <img src="@(string.IsNullOrEmpty(userFoto) ? Url.Content("~/uploads/default-user.png") : userFoto)"
+                                     alt="Perfil"
+                                     style="width:36px;height:36px;border-radius:50%;object-fit:cover;" />
+
+                                <span class="fw-semibold">Hola @userNombre</span>
+
+                                <a class="btn btn-sm btn-outline-secondary"
+                                   asp-controller="IniciarSesion"
+                                   asp-action="Salir">
+                                    Salir
+                                </a>
+                            </div>
+                        }
+                    </div>
+
+                </div> <!-- /row -->
+            </div> <!-- /container -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top mt-auto py-3 text-muted">
+        <div class="container text-center">
+            &copy; 2025 - Racoca_DSWI ·
+            <a asp-controller="Home" asp-action="Privacy" class="link-secondary text-decoration-none">
+                Política de privacidad
+            </a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

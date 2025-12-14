@@ -1,0 +1,91 @@
+﻿@model Proyecto_DSWI.Models.EventosFiltroVM
+@{
+    ViewData["Title"] = "Eventos de ayuda social";
+}
+
+<div class="container mt-4">
+
+    <h4 class="mb-3">Encuentra eventos de ayuda social en Lima</h4>
+
+    <!-- FILTROS -->
+    <form method="get" class="row g-2 mb-4">
+        <div class="col-md-3">
+            <select name="distrito" class="form-select">
+                <option value="">Distrito</option>
+                @foreach (var d in (List<DistritoModel>)ViewBag.Distritos)
+                {
+                    <option value="@d.Nombre" selected="@(Context.Request.Query["distrito"] == d.Nombre)">
+                        @d.Nombre
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <select name="categoriaId" class="form-select">
+                <option value="">Todas las categorías</option>
+                @foreach (var c in Model.Categorias)
+                {
+                    <option value="@c.Id" selected="@(Model.CategoriaId == c.Id)">
+                        @c.Nombre
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <input type="date"
+                   name="fecha"
+                   class="form-control"
+                   value="@Context.Request.Query["fecha"]" />
+        </div>
+
+        <div class="col-md-3">
+            <button class="btn btn-dark w-100">Buscar</button>
+        </div>
+    </form>
+
+    <!-- LISTADO -->
+    <div class="row">
+        @if (Model.Eventos.Count == 0)
+        {
+            <div class="alert alert-info">No se encontraron eventos.</div>
+        }
+        else
+        {
+            foreach (var e in Model.Eventos)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@e.ImagenPrincipal" class="card-img-top" style="height:200px; object-fit:cover;" />
+
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-1">@e.CategoriaNombre</span>
+
+                            <h6 class="mt-1">@e.Nombre</h6>
+                            <p class="text-muted small mb-1">@e.NombreOrganizacion</p>
+
+                            <p class="small mb-1">
+                                📍 @e.Distrito<br />
+                                📅 @e.FechaEvento.ToString("dd/MM/yyyy") - @e.HoraEvento
+                            </p>
+
+                            <p class="small text-muted">@e.DescripcionCorta</p>
+                        </div>
+
+                        <div class="card-footer bg-white border-0">
+                            @if (!string.IsNullOrWhiteSpace(e.WhatsappNumero))
+                            {
+                                <a target="_blank"
+                                   href="https://wa.me/51@(e.WhatsappNumero)"
+                                   class="btn btn-success w-100">
+                                    Participar
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

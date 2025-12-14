@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyectos VS\\Proyecto-DSWI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\data\\creareventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\data\\creareventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\views\\registro\\organizacionpaso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\views\\registro\\organizacionpaso1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\organizacioneventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\organizacioneventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\data\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\data\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\models\\eventodetallemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\models\\eventodetallemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\views\\organizacioneventos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\views\\organizacioneventos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\models\\creareventomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\models\\creareventomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\models\\eventomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\models\\eventomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\iniciarsesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\iniciarsesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\views\\eventos\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\views\\eventos\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\miseventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\miseventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\misinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\misinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|d:\\proyectos vs\\proyecto-dswi\\proyecto-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D78B8-0490-4B96-A6F3-8235180A606E}|Proyecto-DSWI\\Proyecto-DSWI.csproj|solutionrelative:proyecto-dswi\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrganizacionPaso1.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Registro\\OrganizacionPaso1.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Views\\Registro\\OrganizacionPaso1.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Registro\\OrganizacionPaso1.cshtml",
+              "RelativeToolTip": "Proyecto-DSWI\\Views\\Registro\\OrganizacionPaso1.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T02:20:38.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrearEventoRepository.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Data\\CrearEventoRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Data\\CrearEventoRepository.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Data\\CrearEventoRepository.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Data\\CrearEventoRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:18:47.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventoModel.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\EventoModel.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Models\\EventoModel.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\EventoModel.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Models\\EventoModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:06:24.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Data\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Data\\EventoRepository.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Data\\EventoRepository.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Data\\EventoRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAuwEsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:05:56.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrganizacionEventosController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\OrganizacionEventosController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\OrganizacionEventosController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\OrganizacionEventosController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\OrganizacionEventosController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:03:11.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventoDetalleModel.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\EventoDetalleModel.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Models\\EventoDetalleModel.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\EventoDetalleModel.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Models\\EventoDetalleModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:27:35.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Proyecto-DSWI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T02:18:28.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwCIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:04:19.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\OrganizacionEventos\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Views\\OrganizacionEventos\\Crear.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\OrganizacionEventos\\Crear.cshtml",
+              "RelativeToolTip": "Proyecto-DSWI\\Views\\OrganizacionEventos\\Crear.cshtml",
+              "ViewState": "AgIAALsAAAAAAAAAAAAQwNwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T01:22:00.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Eventos\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Views\\Eventos\\Detalle.cshtml",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Views\\Eventos\\Detalle.cshtml",
+              "RelativeToolTip": "Proyecto-DSWI\\Views\\Eventos\\Detalle.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-13T01:04:49.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventosController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\EventosController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\EventosController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\EventosController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\EventosController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:04:24.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CrearEventoModel.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\CrearEventoModel.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Models\\CrearEventoModel.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Models\\CrearEventoModel.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Models\\CrearEventoModel.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAxwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:18:49.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IniciarSesionController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\IniciarSesionController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\IniciarSesionController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\IniciarSesionController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\IniciarSesionController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:04:07.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MisEventosController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\MisEventosController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\MisEventosController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\MisEventosController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\MisEventosController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:04:01.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MisInscripcionesController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\MisInscripcionesController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\MisInscripcionesController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\MisInscripcionesController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\MisInscripcionesController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:03:56.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegistroController.cs",
+              "DocumentMoniker": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\RegistroController.cs",
+              "RelativeDocumentMoniker": "Proyecto-DSWI\\Controllers\\RegistroController.cs",
+              "ToolTip": "D:\\Proyectos VS\\Proyecto-DSWI\\Proyecto-DSWI\\Controllers\\RegistroController.cs",
+              "RelativeToolTip": "Proyecto-DSWI\\Controllers\\RegistroController.cs",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAswIQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T01:02:08.041Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

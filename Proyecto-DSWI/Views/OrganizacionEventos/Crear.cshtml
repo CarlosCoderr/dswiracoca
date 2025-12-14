@@ -1,0 +1,357 @@
+﻿@model Proyecto_DSWI.Models.CrearEventoModel
+@using Proyecto_DSWI.Models
+@{
+    ViewData["Title"] = "Crear evento";
+    var categorias = ViewBag.Categorias as List<CategoriaEventoModel> ?? new List<CategoriaEventoModel>();
+    var distritos = ViewBag.Distritos as List<DistritoModel> ?? new List<DistritoModel>();
+    var hoy = DateTime.Today.ToString("yyyy-MM-dd");
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-9">
+
+            <div class="mb-4">
+                <h2 class="fw-bold mb-1">Publicar un evento</h2>
+                <p class="text-muted mb-0">Completa los datos y sube fotos para que más voluntarios se unan.</p>
+            </div>
+
+            @if (TempData["OK"] != null)
+            {
+                <div class="alert alert-success">@TempData["OK"]</div>
+            }
+
+            <form asp-action="Crear" asp-controller="OrganizacionEventos" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                @Html.AntiForgeryToken()
+
+                <div class="card shadow-sm border-0 rounded-4 mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-semibold mb-3">1) Información del evento</h5>
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Nombre del evento *</label>
+                                <input asp-for="Nombre" class="form-control form-control-lg" placeholder="Ej: Campaña de abrigo en Villa El Salvador" required />
+                                <span asp-validation-for="Nombre" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Categoría *</label>
+                                <select asp-for="CategoriaId" class="form-select form-select-lg" required>
+                                    <option value="">Selecciona una categoría</option>
+                                    @foreach (var c in categorias)
+                                    {
+                                        <option value="@c.Id">@c.Nombre</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="CategoriaId" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Método de contacto</label>
+                                <select asp-for="MetodoContacto" class="form-select form-select-lg">
+                                    <option value="WHATSAPP">WhatsApp</option>
+                                    <option value="CHAT">Chat interno (futuro)</option>
+                                    <option value="CORREO">Correo (futuro)</option>
+                                </select>
+                                <span asp-validation-for="MetodoContacto" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Descripción corta</label>
+                                <textarea asp-for="DescripcionCorta" class="form-control" rows="2" placeholder="Resumen rápido del evento (máx. 200)"></textarea>
+                                <span asp-validation-for="DescripcionCorta" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Descripción larga</label>
+                                <textarea asp-for="DescripcionLarga" class="form-control" rows="4" placeholder="Explica en detalle el objetivo, actividades y cómo se desarrollará el evento"></textarea>
+                                <span asp-validation-for="DescripcionLarga" class="text-danger small"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm border-0 rounded-4 mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-semibold mb-3">2) Fecha y ubicación</h5>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-4">
+                                <label class="form-label fw-semibold">Fecha del evento *</label>
+                                <input asp-for="FechaEvento" type="date" min="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" />
+                                <span asp-validation-for="FechaEvento" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <label class="form-label fw-semibold">Hora del evento *</label>
+                                <input asp-for="HoraEvento" type="time" class="form-control form-control-lg" required />
+                                <span asp-validation-for="HoraEvento" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <label class="form-label fw-semibold">Distrito *</label>
+                                <select asp-for="Distrito" class="form-select">
+                                    <option value="">Selecciona un distrito</option>
+                                    @foreach (var d in ViewBag.Distritos)
+                                    {
+                                        <option value="@d.Nombre">@d.Nombre</option>
+                                    }
+                                </select>
+
+                                <span asp-validation-for="Distrito" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Dirección</label>
+                                <input asp-for="Direccion" class="form-control form-control-lg" placeholder="Ej: Av. Principal 123, referencia..." />
+                                <span asp-validation-for="Direccion" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Mapa (URL de Google Maps)</label>
+                                <input asp-for="MapaUrl" class="form-control form-control-lg" placeholder="Pega el link de Google Maps (opcional)" />
+                                <span asp-validation-for="MapaUrl" class="text-danger small"></span>
+                                <div class="form-text">Ejemplo: comparte el link de ubicación desde Google Maps.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm border-0 rounded-4 mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-semibold mb-3">3) Cupos y contacto</h5>
+
+                        <div class="row g-3 align-items-end">
+                            <div class="col-12 col-md-4">
+                                <div class="form-check">
+                                    <input asp-for="Ilimitado" class="form-check-input" type="checkbox" id="chkIlimitado" />
+                                    <label class="form-check-label fw-semibold" for="chkIlimitado">
+                                        Cupos ilimitados
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <label class="form-label fw-semibold">Cupos (si no es ilimitado)</label>
+                                <input asp-for="CuposLimite" type="number" min="1" class="form-control form-control-lg" id="txtCupos" placeholder="Ej: 30" />
+                                <span asp-validation-for="CuposLimite" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <label class="form-label fw-semibold">WhatsApp</label>
+                                <input asp-for="WhatsappNumero" class="form-control form-control-lg" placeholder="Ej: 999888777" />
+                                <span asp-validation-for="WhatsappNumero" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" />
+
+                        <div class="row g-3">
+                            <div class="col-12 col-lg-4">
+                                <label class="form-label fw-semibold">Requerimientos</label>
+                                <textarea asp-for="Requisitos" class="form-control" rows="4" placeholder="Ej: llevar DNI, ropa cómoda, puntualidad..."></textarea>
+                                <span asp-validation-for="Requisitos" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <label class="form-label fw-semibold">El evento incluye</label>
+                                <textarea asp-for="Incluye" class="form-control" rows="4" placeholder="Ej: refrigerio, materiales, constancia..."></textarea>
+                                <span asp-validation-for="Incluye" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <label class="form-label fw-semibold">El evento no incluye</label>
+                                <textarea asp-for="NoIncluye" class="form-control" rows="4" placeholder="Ej: transporte, alojamiento..."></textarea>
+                                <span asp-validation-for="NoIncluye" class="text-danger small"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm border-0 rounded-4 mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-semibold mb-3">4) Fotos</h5>
+
+                        <div class="row g-4">
+                            <div class="col-12 col-lg-6">
+                                <label class="form-label fw-semibold">Foto principal</label>
+                                <input asp-for="ImagenPrincipalFile" type="file" class="form-control form-control-lg" accept="image/*" id="filePrincipal" />
+                                <span asp-validation-for="ImagenPrincipalFile" class="text-danger small"></span>
+
+                                <div class="mt-3">
+                                    <div class="border rounded-4 p-2 bg-light">
+                                        <div class="small text-muted mb-2">Previsualización</div>
+                                        <img id="previewPrincipal" src="" alt="Preview" style="width:100%; max-height:240px; object-fit:cover; display:none; border-radius:14px;" />
+                                        <div id="principalEmpty" class="text-muted small">Aún no seleccionaste una imagen.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label class="form-label fw-semibold mb-0">Galería (máx 15)</label>
+                                    <span class="badge text-bg-secondary" id="galeriaCount">0/15</span>
+                                </div>
+
+                                <input asp-for="GaleriaFiles" type="file" multiple accept="image/*" class="form-control" />
+                                <div id="preview" class="d-flex flex-wrap gap-2 mt-2"></div>
+
+                                <script>
+                                    const input = document.querySelector('input[name="GaleriaFiles"]');
+                                    const preview = document.getElementById('preview');
+
+                                    input?.addEventListener('change', e => {
+                                      preview.innerHTML = '';
+                                      const files = [...e.target.files];
+                                      if (files.length > 15) { alert("Máximo 15 imágenes"); e.target.value=''; return; }
+
+                                      files.forEach(f => {
+                                        const url = URL.createObjectURL(f);
+                                        const img = document.createElement('img');
+                                        img.src = url;
+                                        img.style.width = '110px';
+                                        img.style.height = '80px';
+                                        img.style.objectFit = 'cover';
+                                        img.style.borderRadius = '12px';
+                                        preview.appendChild(img);
+                                      });
+                                    });
+                                </script>
+
+                                <span asp-validation-for="GaleriaFiles" class="text-danger small"></span>
+
+                                <div class="mt-3">
+                                    <div class="row g-2" id="galeriaPreview"></div>
+                                    <div id="galeriaEmpty" class="text-muted small mt-2">Aún no seleccionaste fotos.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-text mt-3">
+                            Consejo: sube fotos claras y reales. Máximo 15 imágenes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 justify-content-end">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+                        Cancelar
+                    </a>
+
+                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
+                        Publicar evento
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Bootstrap validation look
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })();
+
+        // Cupos: si ilimitado, deshabilita input
+        const chkIlimitado = document.getElementById('chkIlimitado');
+        const txtCupos = document.getElementById('txtCupos');
+
+        function toggleCupos() {
+            if (!chkIlimitado || !txtCupos) return;
+            if (chkIlimitado.checked) {
+                txtCupos.value = '';
+                txtCupos.disabled = true;
+            } else {
+                txtCupos.disabled = false;
+            }
+        }
+        if (chkIlimitado) {
+            chkIlimitado.addEventListener('change', toggleCupos);
+            toggleCupos();
+        }
+
+        // Preview principal
+        const filePrincipal = document.getElementById('filePrincipal');
+        const previewPrincipal = document.getElementById('previewPrincipal');
+        const principalEmpty = document.getElementById('principalEmpty');
+
+        if (filePrincipal) {
+            filePrincipal.addEventListener('change', () => {
+                const f = filePrincipal.files && filePrincipal.files[0];
+                if (!f) {
+                    previewPrincipal.style.display = 'none';
+                    principalEmpty.style.display = 'block';
+                    previewPrincipal.src = '';
+                    return;
+                }
+                const url = URL.createObjectURL(f);
+                previewPrincipal.src = url;
+                previewPrincipal.style.display = 'block';
+                principalEmpty.style.display = 'none';
+            });
+        }
+
+        // Preview galería (máx 15)
+        const fileGaleria = document.getElementById('fileGaleria');
+        const galeriaPreview = document.getElementById('galeriaPreview');
+        const galeriaEmpty = document.getElementById('galeriaEmpty');
+        const galeriaCount = document.getElementById('galeriaCount');
+
+        function renderGaleria(files) {
+            galeriaPreview.innerHTML = '';
+            if (!files || files.length === 0) {
+                galeriaEmpty.style.display = 'block';
+                galeriaCount.textContent = '0/15';
+                return;
+            }
+
+            const max = 15;
+            const count = Math.min(files.length, max);
+            galeriaCount.textContent = `${count}/15`;
+            galeriaEmpty.style.display = 'none';
+
+            for (let i = 0; i < count; i++) {
+                const f = files[i];
+                const col = document.createElement('div');
+                col.className = 'col-4';
+
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(f);
+                img.style.width = '100%';
+                img.style.height = '90px';
+                img.style.objectFit = 'cover';
+                img.style.borderRadius = '12px';
+                img.style.border = '1px solid rgba(0,0,0,.1)';
+
+                col.appendChild(img);
+                galeriaPreview.appendChild(col);
+            }
+        }
+
+        if (fileGaleria) {
+            fileGaleria.addEventListener('change', () => {
+                const files = fileGaleria.files ? Array.from(fileGaleria.files) : [];
+                if (files.length > 15) {
+                    alert("Máximo 15 fotos. Selecciona 15 o menos.");
+                }
+                renderGaleria(files);
+            });
+        }
+    </script>
+}

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Tipo de usuario";
+}
+
+<div class="user-type-page text-center">
+    <h1 class="user-type-title mb-5">Tipo de usuario</h1>
+
+    <div class="row justify-content-center g-4">
+        <!-- Card Voluntario -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+            <a asp-controller="Registro"
+               asp-action="VoluntarioPaso1"
+               class="user-type-card text-decoration-none">
+                <span>Voluntario</span>
+            </a>
+        </div>
+
+        <!-- Card Organización -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+            <a asp-controller="Registro"
+               asp-action="OrganizacionPaso1"
+               class="user-type-card text-decoration-none">
+                <span>Organización</span>
+            </a>
+        </div>
+    </div>
+</div>

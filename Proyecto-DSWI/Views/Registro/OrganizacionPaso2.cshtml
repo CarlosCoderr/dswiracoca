@@ -1,0 +1,61 @@
+﻿@using Proyecto_DSWI.Models
+@model Proyecto_DSWI.Models.RegistroOrganizacionPaso2VM
+@{
+    ViewData["Title"] = "Registro Organización - Paso 2";
+    var tipos = ViewBag.TiposOrganizacion as List<TipoOrganizacionModel> ?? new List<TipoOrganizacionModel>();
+}
+
+<div class="container mt-4" style="max-width:520px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a class="btn btn-link p-0" asp-action="OrganizacionPaso1">Regresa</a>
+        <div class="text-muted small">Pag. Registro Organización 2</div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="text-center mb-3">Datos de la organización</h5>
+
+            <form asp-action="OrganizacionPaso2" method="post" enctype="multipart/form-data" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+
+                <div class="mb-2">
+                    <label class="form-label">Foto de la organización *</label>
+                    <input asp-for="FotoPerfilFile" type="file" class="form-control" accept="image/*" />
+                    <span asp-validation-for="FotoPerfilFile" class="text-danger small"></span>
+                    <div class="form-text">Formatos: JPG, PNG o WEBP. Máx 2MB.</div>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Nombre de la organización</label>
+                    <input asp-for="NombreOrganizacion" class="form-control" placeholder="Nombre de tu ONG/organización" />
+                    <span asp-validation-for="NombreOrganizacion" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Tipo de organización</label>
+                    <select asp-for="TipoOrganizacionId" class="form-select">
+                        <option value="">Seleccione</option>
+                        @foreach (var t in tipos)
+                        {
+                            <option value="@t.Id">@t.Nombre</option>
+                        }
+                    </select>
+                    <span asp-validation-for="TipoOrganizacionId" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Descripción corta</label>
+                    <textarea asp-for="DescripcionCorta" class="form-control" rows="3" placeholder="Máx 300 caracteres"></textarea>
+                    <span asp-validation-for="DescripcionCorta" class="text-danger small"></span>
+                </div>
+
+                <button class="btn btn-dark w-100 mt-3" type="submit">Continuar</button>
+                <div class="text-center text-muted mt-2">2/4</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

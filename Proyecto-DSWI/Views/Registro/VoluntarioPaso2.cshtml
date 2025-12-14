@@ -1,0 +1,53 @@
+﻿@using Proyecto_DSWI.Models
+@model Proyecto_DSWI.Models.RegistroVoluntarioPaso2VM
+@{
+    ViewData["Title"] = "Registro Voluntario - Paso 2";
+    var habilidades = ViewBag.Habilidades as List<HabilidadModel> ?? new List<HabilidadModel>();
+}
+
+<div class="container mt-4" style="max-width:520px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a class="btn btn-link p-0" asp-action="VoluntarioPaso1">Regresa</a>
+    </div>
+
+    <div class="card border-0">
+        <div class="card-body">
+            <h3 class="text-center mb-1">Tus habilidades</h3>
+            <p class="text-center text-muted small mb-3">
+                Selecciona mínimo 3 para coordinar actividades.
+            </p>
+
+            <form asp-action="VoluntarioPaso2" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger small mb-2"></div>
+
+                <div class="row">
+                    @foreach (var hab in habilidades)
+                    {
+                        var isChecked = Model.HabilidadesIds != null && Model.HabilidadesIds.Contains(hab.Id);
+
+                        <div class="col-6 mb-2">
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       name="HabilidadesIds"
+                                       value="@hab.Id"
+                                       id="hab_@hab.Id"
+                                @(isChecked ? "checked" : "") />
+                                <label class="form-check-label" for="hab_@hab.Id">@hab.Nombre</label>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <span asp-validation-for="HabilidadesIds" class="text-danger small"></span>
+
+                <button class="btn btn-dark w-100 mt-3" type="submit">Continuar</button>
+                <div class="text-center text-muted mt-2">2/3</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

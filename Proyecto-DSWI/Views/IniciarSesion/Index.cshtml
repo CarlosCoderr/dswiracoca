@@ -1,0 +1,58 @@
+﻿@model Proyecto_DSWI.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+
+<div class="d-flex justify-content-center">
+    <div class="card shadow-sm" style="max-width:520px;width:100%;">
+        <div class="card-body p-4">
+            <h2 class="text-center mb-1">Iniciar sesión</h2>
+            <p class="text-center text-muted mb-4">Accede para participar en eventos y gestionar tu perfil.</p>
+
+            <form asp-action="Index" method="post" novalidate>
+                <input type="hidden" asp-for="ReturnUrl" />
+
+                <div asp-validation-summary="All" class="text-danger small mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Correo</label>
+                    <input asp-for="Email" class="form-control" placeholder="correo@ejemplo.com" autocomplete="email" />
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Contraseña</label>
+
+                    <div class="input-group">
+                        <input asp-for="Password" class="form-control" type="password" id="passwordInput" autocomplete="current-password" />
+                        <button class="btn btn-outline-secondary" type="button" id="togglePasswordBtn" aria-label="Mostrar contraseña">
+                            👁
+                        </button>
+                    </div>
+
+                    <span asp-validation-for="Password" class="text-danger small"></span>
+                </div>
+
+                <button class="btn btn-dark w-100 py-2" type="submit">Entrar</button>
+
+                <div class="text-center mt-3">
+                    <span class="text-muted">¿No tienes cuenta?</span>
+                    <a asp-controller="Registro" asp-action="Index">Regístrate</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        (function () {
+            const input = document.getElementById("passwordInput");
+            const btn = document.getElementById("togglePasswordBtn");
+            btn.addEventListener("click", function () {
+                input.type = (input.type === "password") ? "text" : "password";
+            });
+        })();
+    </script>
+}
