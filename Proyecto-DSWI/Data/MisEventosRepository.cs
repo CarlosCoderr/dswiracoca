@@ -9,7 +9,7 @@ namespace Proyecto_DSWI.Data
 
         public MisEventosRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection");
+            _cn = config.GetConnectionString("cnRacoca");
         }
 
         public async Task<List<MisEventoModel>> ListarPorOrganizacionAsync(int organizacionId)

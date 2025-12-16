@@ -24,6 +24,8 @@ builder.Services.AddScoped<TipoOrganizacionRepository>();
 
 builder.Services.AddScoped<DistritoRepository>();
 
+builder.Services.AddScoped<PerfilRepository>();
+
 
 // Session (Wizard Registro)
 builder.Services.AddSession(options =>
@@ -47,7 +49,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// ✅ Necesario para Registro multi-paso
+//  Necesario para Registro multi-paso
 app.UseSession();
 
 app.UseAuthorization();

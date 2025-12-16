@@ -37,14 +37,12 @@ namespace Proyecto_DSWI.Models
         public string? WhatsappNumero { get; set; }
         public string? MetodoContacto { get; set; }
 
-        // En tu BD hay estado (nvarchar)
         public string Estado { get; set; } = "Activo";
 
         // Cupos
         public bool Ilimitado { get; set; } = true;
         public int? CuposLimite { get; set; }
 
-        // ✅ SUBIDA REAL
         public IFormFile? ImagenPrincipalFile { get; set; }
 
         // Máx 15 (validas en Controller)

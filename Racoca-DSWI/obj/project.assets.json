@@ -6785,11 +6785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
+      "projectUniqueName": "C:\\Users\\rscm_\\OneDrive\\Imágenes\\RacocaDSW1\\Racoca-DSWI\\Racoca-DSWI.csproj",
       "projectName": "Racoca-DSWI",
-      "projectPath": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
+      "projectPath": "C:\\Users\\rscm_\\OneDrive\\Imágenes\\RacocaDSW1\\Racoca-DSWI\\Racoca-DSWI.csproj",
       "packagesPath": "C:\\Users\\rscm_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\obj\\",
+      "outputPath": "C:\\Users\\rscm_\\OneDrive\\Imágenes\\RacocaDSW1\\Racoca-DSWI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

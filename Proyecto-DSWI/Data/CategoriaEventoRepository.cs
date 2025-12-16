@@ -9,7 +9,7 @@ namespace Proyecto_DSWI.Data
 
         public CategoriaEventoRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection");
+            _cn = config.GetConnectionString("cnRacoca");
         }
 
         public async Task<List<CategoriaEventoModel>> ListarAsync()

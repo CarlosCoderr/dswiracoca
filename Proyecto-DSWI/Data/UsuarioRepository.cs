@@ -9,7 +9,7 @@ namespace Proyecto_DSWI.Data
 
         public UsuarioRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection")!;
+            _cn = config.GetConnectionString("cnRacoca")!;
         }
 
         public async Task<bool> EmailExisteAsync(string email)

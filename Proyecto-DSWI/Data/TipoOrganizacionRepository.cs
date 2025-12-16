@@ -9,7 +9,7 @@ namespace Proyecto_DSWI.Data
 
         public TipoOrganizacionRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection");
+            _cn = config.GetConnectionString("cnRacoca");
         }
 
         public async Task<string?> ObtenerNombreAsync(int id)

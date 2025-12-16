@@ -9,7 +9,7 @@ namespace Proyecto_DSWI.Data
 
         public VoluntarioRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection");
+            _cn = config.GetConnectionString("cnRacoca");
         }
 
         public async Task CrearPerfilAsync(VoluntarioPerfilModel p)

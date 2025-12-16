@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8gR47GITCGM=",
+  "dgSpecHash": "VL0fH2X2mwk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rscm_\\source\\repos\\dswiracoca\\Racoca-DSWI\\Racoca-DSWI.csproj",
+  "projectFilePath": "C:\\Users\\rscm_\\OneDrive\\Imágenes\\RacocaDSW1\\Racoca-DSWI\\Racoca-DSWI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rscm_\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\rscm_\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

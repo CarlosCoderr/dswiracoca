@@ -9,7 +9,8 @@ namespace Proyecto_DSWI.Data
 
         public DistritoRepository(IConfiguration config)
         {
-            _cs = config.GetConnectionString("CibertecConnection")!;
+            _cs = config.GetConnectionString("cnRacoca") 
+                         ?? throw new InvalidOperationException("No se encontró el ConnectionString. Revisa appsettings.json");
         }
 
         private SqlConnection GetConn() => new SqlConnection(_cs);

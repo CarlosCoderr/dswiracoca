@@ -13,7 +13,7 @@ namespace Proyecto_DSWI.Data
 
         public CrearEventoRepository(IConfiguration config)
         {
-            _cn = config.GetConnectionString("CibertecConnection") ?? "";
+            _cn = config.GetConnectionString("cnRacoca") ?? "";
         }
 
         public async Task<int> CrearEventoAsync(int organizacionId, CrearEventoModel model)
