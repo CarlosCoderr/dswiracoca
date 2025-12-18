@@ -9,6 +9,9 @@
 
         public List<EventoModel> Eventos { get; set; } = new();
         public List<CategoriaEventoModel> Categorias { get; set; } = new();
-        public List<DistritoModel> Distritos { get; set; } = new();         
+        public List<DistritoModel> Distritos { get; set; } = new();
+        public int Page { get; set; }
+        public int TotalPages { get; set; }
+
     }
 }

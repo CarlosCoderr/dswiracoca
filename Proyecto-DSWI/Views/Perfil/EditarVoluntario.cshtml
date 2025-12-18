@@ -1,0 +1,89 @@
+﻿@model Proyecto_DSWI.Models.VoluntarioPerfilEditVM
+@{
+    ViewData["Title"] = "Editar perfil";
+}
+
+<div class="container py-5">
+    <h3 class="mb-4">
+        <i class="bi bi-pencil-square me-2"></i>Editar perfil de voluntario
+    </h3>
+
+    <form asp-action="EditarVoluntario" method="post">
+        @Html.AntiForgeryToken()
+
+        <input type="hidden" asp-for="UsuarioId" />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="Nombres" class="form-label"></label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Apellidos" class="form-label"></label>
+                <input asp-for="Apellidos" class="form-control" />
+                <span asp-validation-for="Apellidos" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="Celular" class="form-label"></label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="Sexo" class="form-label"></label>
+                <select asp-for="Sexo" class="form-select">
+                    <option value="">Prefiero no decirlo</option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+                <span asp-validation-for="Sexo" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="FechaNacimiento" class="form-label"></label>
+                <input asp-for="FechaNacimiento" type="date" class="form-control" />
+                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Ciudad" class="form-label"></label>
+                <input asp-for="Ciudad" class="form-control" />
+                <span asp-validation-for="Ciudad" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="Distrito" class="form-label"></label>
+                <input asp-for="Distrito" class="form-control" />
+                <span asp-validation-for="Distrito" class="text-danger"></span>
+            </div>
+
+            <div class="col-12">
+                <label asp-for="FotoPerfilUrl" class="form-label"></label>
+                <input asp-for="FotoPerfilUrl" class="form-control" />
+                <div class="form-text">
+                    Puedes dejarlo vacío para usar tu avatar automático.
+                </div>
+                <span asp-validation-for="FotoPerfilUrl" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-check-lg me-1"></i>Guardar cambios
+            </button>
+
+            <a asp-action="Voluntario"
+               asp-route-id="@Model.UsuarioId"
+               class="btn btn-outline-secondary">
+                Cancelar
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

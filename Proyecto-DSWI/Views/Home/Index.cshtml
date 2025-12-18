@@ -73,19 +73,50 @@
                             <p class="small text-muted">@e.DescripcionCorta</p>
                         </div>
 
-                        <div class="card-footer bg-white border-0">
-                            @if (!string.IsNullOrWhiteSpace(e.WhatsappNumero))
-                            {
-                                <a target="_blank"
-                                   href="https://wa.me/51@(e.WhatsappNumero)"
-                                   class="btn btn-success w-100">
-                                    Participar
-                                </a>
-                            }
-                        </div>
+                      
+                        <a asp-controller="Eventos"
+                           asp-action="Detalle"
+                           asp-route-id="@e.CategoriaId"
+                           class="btn btn-success w-100">
+                            Participar
+                        </a>
+
                     </div>
                 </div>
             }
         }
     </div>
 </div>
+
+@if (Model.TotalPages > 1)
+{
+    <nav class="d-flex justify-content-center mt-4">
+        <ul class="pagination pagination-lg">
+
+            <li class="page-item @(Model.Page <= 1 ? "disabled" : "")">
+                <a class="page-link"
+                   href="@Url.Action("Index", "Home", new { q = Model.Q, distrito = Model.Distrito, categoriaId = Model.CategoriaId, fecha = Model.Fecha?.ToString("yyyy-MM-dd"), page = Model.Page - 1 })">
+                    «
+                </a>
+            </li>
+
+            @for (int i = Math.Max(1, Model.Page - 2); i <= Math.Min(Model.TotalPages, Model.Page + 2); i++)
+            {
+                <li class="page-item @(i == Model.Page ? "active" : "")">
+                    <a class="page-link"
+                       href="@Url.Action("Index", "Home", new { q = Model.Q, distrito = Model.Distrito, categoriaId = Model.CategoriaId, fecha = Model.Fecha?.ToString("yyyy-MM-dd"), page = i })">
+                        @i
+                    </a>
+                </li>
+            }
+
+            <li class="page-item @(Model.Page >= Model.TotalPages ? "disabled" : "")">
+                <a class="page-link"
+                   href="@Url.Action("Index", "Home", new { q = Model.Q, distrito = Model.Distrito, categoriaId = Model.CategoriaId, fecha = Model.Fecha?.ToString("yyyy-MM-dd"), page = Model.Page + 1 })">
+                    »
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+}

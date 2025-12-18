@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\uploads\eventos\" />
     <Folder Include="wwwroot\uploads\organizaciones\" />
   </ItemGroup>
 
