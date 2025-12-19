@@ -1,0 +1,147 @@
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<div class="container" style="max-width: 960px;">
+    <div class="row g-4 mt-4">
+        <div class="col-12">
+            <div class="d-flex align-items-center gap-2 mb-2 text-muted small">
+                <span class="material-icons-outlined text-dark" style="font-size:20px;">support_agent</span>
+                Estamos para ayudarte
+            </div>
+            <h2 class="fw-bold mb-1">Contáctanos</h2>
+            <p class="text-muted mb-3">Cuéntanos qué necesitas y te responderemos a la brevedad.</p>
+
+            @if (TempData["ContactoOK"] != null)
+            {
+                <div class="alert alert-success" role="alert">@TempData["ContactoOK"]</div>
+            }
+        </div>
+
+        <div class="col-12 col-lg-7">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body p-4">
+                    <form asp-action="Contacto" method="post" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Nombre</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><span class="material-icons-outlined text-dark" style="font-size:18px;">person</span></span>
+                                    <input name="nombre" class="form-control" placeholder="Tu nombre" required />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Apellidos</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><span class="material-icons-outlined text-dark" style="font-size:18px;">badge</span></span>
+                                    <input name="apellidos" class="form-control" placeholder="Tus apellidos" required />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Correo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><span class="material-icons-outlined text-dark" style="font-size:18px;">mail</span></span>
+                                    <input name="correo" type="email" class="form-control" placeholder="tucorreo@ejemplo.com" required />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label fw-semibold">Celular</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><span class="material-icons-outlined text-dark" style="font-size:18px;">call</span></span>
+                                    <input name="celular" type="tel" class="form-control" placeholder="Ej. 999 888 777" required />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Asunto</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><span class="material-icons-outlined text-dark" style="font-size:18px;">label</span></span>
+                                    <input name="asunto" class="form-control" placeholder="Tema de tu consulta" required />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Mensaje</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light align-items-start"><span class="material-icons-outlined text-dark" style="font-size:18px;">chat_bubble_outline</span></span>
+                                    <textarea name="mensaje" class="form-control" rows="4" placeholder="Describe tu consulta" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 mt-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+            <div class="card shadow-sm border-0 rounded-4 h-100">
+                <div class="card-body p-4 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                        <span class="material-icons-outlined text-dark" style="font-size:24px;">email</span>
+                        <div>
+                            <div class="fw-semibold">Correo</div>
+                            <div class="text-muted">soporte@racoca.pe</div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                        <span class="material-icons-outlined text-dark" style="font-size:24px;">call</span>
+                        <div>
+                            <div class="fw-semibold">Teléfono</div>
+                            <div class="text-muted">+51 999999999</div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                        <span class="material-icons-outlined text-dark" style="font-size:24px;">schedule</span>
+                        <div>
+                            <div class="fw-semibold">Horarios</div>
+                            <div class="text-muted">Lunes a viernes, 9:00 a 18:00</div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                        <span class="material-icons-outlined text-dark" style="font-size:24px;">place</span>
+                        <div>
+                            <div class="fw-semibold">Ubicación</div>
+                            <div class="text-muted">Lima, Perú</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="whatsapp-fab">
+    <a href="https://wa.me/51999888777" target="_blank" rel="noopener"
+       class="btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center"
+       style="width:60px;height:60px;">
+        <i class="bi bi-whatsapp fs-3"></i>
+        <span class="visually-hidden">Contactar por WhatsApp</span>
+    </a>
+</div>
+
+<style>
+    .whatsapp-fab {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 1050;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+}

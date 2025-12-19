@@ -4,7 +4,12 @@
 }
 
 <div class="container mt-4">
-    <h4 class="mb-3">Mis eventos creados</h4>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">Mis eventos creados</h4>
+        <a asp-controller="OrganizacionEventos" asp-action="Crear" class="btn btn-primary">
+            Crear evento
+        </a>
+    </div>
 
     @if (!Model.Any())
     {

@@ -45,5 +45,19 @@ namespace Proyecto_DSWI.Controllers
 
             return View(vm);
         }
+
+        [HttpGet]
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Contacto(string nombre, string apellidos, string correo, string celular, string asunto, string mensaje)
+        {
+            TempData["ContactoOK"] = "Gracias por escribirnos. Nos pondremos en contacto pronto.";
+            return RedirectToAction(nameof(Contacto));
+        }
     }
 }

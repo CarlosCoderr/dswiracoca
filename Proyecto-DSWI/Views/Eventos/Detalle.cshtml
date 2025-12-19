@@ -1,109 +1,183 @@
 ﻿@model Proyecto_DSWI.Models.EventoDetalleModel
 @{
     ViewData["Title"] = Model.Nombre;
+    var galeria = Model.ImagenesGaleria?.Take(4).ToList() ?? new List<string>();
 }
 
-<div class="container mt-4" style="max-width:1100px;">
+<div class="container py-4" style="max-width:1200px;">
 
-    <!-- TÍTULO -->
-    <h3>@Model.Nombre</h3>
-    <p class="text-muted">
-        @Model.Categoria · @Model.NombreOrganizacion
-    </p>
-
-    <!-- IMÁGENES -->
-    <div class="row mb-4">
-        <div class="col-md-8">
-            <img src="@Model.ImagenPrincipal"
-                 class="img-fluid rounded"
-                 style="height:420px; width:100%; object-fit:cover;" />
+    <!-- Encabezado -->
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+            <h2 class="mb-1">@Model.Nombre</h2>
+            <div class="text-muted">@Model.Categoria · @Model.NombreOrganizacion · @Model.Distrito</div>
         </div>
-        <div class="col-md-4">
-            <div class="row g-2">
-                @foreach (var img in Model.ImagenesGaleria)
+    </div>
+
+    <!-- Hero de imágenes estilo grid -->
+    <div class="row g-2 mb-4">
+        <div class="col-lg-7">
+            <div class="overflow-hidden rounded" style="height:460px;">
+                <img src="@Model.ImagenPrincipal" alt="Imagen principal"
+                     class="w-100 h-100" style="object-fit:cover;">
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="row g-2" style="height:460px;">
+                @for (int i = 0; i < 4; i++)
                 {
-                    <div class="col-6">
-                        <img src="@img"
-                             class="img-fluid rounded"
-                             style="height:200px; object-fit:cover;" />
+                    var img = galeria.ElementAtOrDefault(i);
+                    if (img == null) { continue; }
+
+                    <div class="col-6" style="height:225px;">
+                        <div class="overflow-hidden rounded h-100">
+                            <img src="@img" alt="Galería"
+                                 class="w-100 h-100" style="object-fit:cover;">
+                        </div>
                     </div>
                 }
             </div>
         </div>
     </div>
 
-    <!-- INFO + CTA -->
-    <div class="row">
-        <div class="col-md-8">
+    <!-- Contenido principal + sidebar sticky -->
+    <div class="row g-4">
+        <div class="col-lg-7 col-xl-8">
+            <div class="mb-4">
+                <h5 class="mb-1">Organizado por @Model.NombreOrganizacion</h5>
+                <div class="text-muted">
+                    <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">place</span>
+                    Ubicado en @Model.Direccion
+                </div>
+            </div>
 
-            <h5>📍 Ubicación</h5>
-            <p>@Model.Distrito – @Model.Direccion</p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+                <div class="border rounded-3 px-3 py-2">
+                    <div class="text-muted small">
+                        <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">calendar_month</span>
+                        Fecha
+                    </div>
+                    <div class="fw-semibold">@Model.FechaEvento.ToString("dd/MM/yyyy")</div>
+                </div>
+                <div class="border rounded-3 px-3 py-2">
+                    <div class="text-muted small">
+                        <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">schedule</span>
+                        Hora
+                    </div>
+                    <div class="fw-semibold">@(Model.HoraEvento?.ToString("hh\\:mm") ?? "Por definir")</div>
+                </div>
+                <div class="border rounded-3 px-3 py-2">
+                    <div class="text-muted small">
+                        <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">groups</span>
+                        Cupos
+                    </div>
+                    <div class="fw-semibold">@(Model.Ilimitado ? "Ilimitado" : (Model.CuposLimite?.ToString() ?? "Por definir"))</div>
+                </div>
+            </div>
 
-            <h5>📅 Fecha y hora</h5>
-            <p>
-                @Model.FechaEvento.ToString("dd/MM/yyyy")
-                · @Model.HoraEvento
-            </p>
+            <div class="mb-4">
+                <h4 class="mb-2">Sobre este evento</h4>
+                <p class="mb-0">@Model.DescripcionLarga</p>
+            </div>
 
-            <hr />
-
-            <h5>📝 Descripción</h5>
-            <p>@Model.DescripcionLarga</p>
-
-            @if (!string.IsNullOrWhiteSpace(Model.Requisitos))
+            @if (!string.IsNullOrWhiteSpace(Model.Requisitos) || !string.IsNullOrWhiteSpace(Model.Incluye) || !string.IsNullOrWhiteSpace(Model.NoIncluye))
             {
-                <h5>✅ Requisitos</h5>
-                <p>@Model.Requisitos</p>
-            }
-
-            @if (!string.IsNullOrWhiteSpace(Model.Incluye))
-            {
-                <h5>🎒 Incluye</h5>
-                <p>@Model.Incluye</p>
-            }
-
-            @if (!string.IsNullOrWhiteSpace(Model.NoIncluye))
-            {
-                <h5>❌ No incluye</h5>
-                <p>@Model.NoIncluye</p>
+                <div class="row g-3 mb-4">
+                    @if (!string.IsNullOrWhiteSpace(Model.Requisitos))
+                    {
+                        <div class="col-md-4">
+                            <div class="border rounded-3 h-100 p-3">
+                                <h6 class="fw-semibold mb-2">
+                                    <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">checklist</span>
+                                    Requisitos
+                                </h6>
+                                <p class="mb-0">@Model.Requisitos</p>
+                            </div>
+                        </div>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.Incluye))
+                    {
+                        <div class="col-md-4">
+                            <div class="border rounded-3 h-100 p-3">
+                                <h6 class="fw-semibold mb-2">
+                                    <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">check_circle</span>
+                                    Incluye
+                                </h6>
+                                <p class="mb-0">@Model.Incluye</p>
+                            </div>
+                        </div>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.NoIncluye))
+                    {
+                        <div class="col-md-4">
+                            <div class="border rounded-3 h-100 p-3">
+                                <h6 class="fw-semibold mb-2">
+                                    <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">cancel</span>
+                                    No incluye
+                                </h6>
+                                <p class="mb-0">@Model.NoIncluye</p>
+                            </div>
+                        </div>
+                    }
+                </div>
             }
 
             @if (!string.IsNullOrWhiteSpace(Model.MapaUrl))
             {
-                <h5>🗺️ Mapa</h5>
-                <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="@Model.MapaUrl"
-                            style="border:0;"
-                            allowfullscreen
-                            loading="lazy"></iframe>
+                <div class="mb-4">
+                    <h5 class="mb-2">
+                        <span class="material-icons-outlined align-middle me-1" style="font-size:20px;">map</span>
+                        Ubicación en el mapa
+                    </h5>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden">
+                        <iframe src="@Model.MapaUrl" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
             }
         </div>
 
-        <!-- SIDEBAR -->
-        <div class="col-md-4">
-            <div class="card shadow-sm sticky-top" style="top:80px;">
+        <div class="col-lg-5 col-xl-4">
+            <div class="card shadow-sm sticky-top" style="top:90px;">
                 <div class="card-body">
-                    <h6 class="mb-2">Participa como voluntario</h6>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                        <div class="text-muted small">
+                            <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">event</span>
+                            Fecha y hora
+                        </div>
+                            <div class="fw-semibold">@Model.FechaEvento.ToString("dd/MM/yyyy") · @(Model.HoraEvento?.ToString("hh\\:mm") ?? "Por definir")</div>
+                        </div>
+                    </div>
 
-                    <p class="small text-muted">
-                        Contacta directamente con la organización.
-                    </p>
+                    <div class="border rounded-3 p-3 mb-3 bg-light">
+                        <div class="text-muted small">
+                            <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">location_on</span>
+                            Ubicación
+                        </div>
+                        <div class="fw-semibold">@Model.Distrito</div>
+                        <div class="text-muted">@Model.Direccion</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="text-muted small">
+                            <span class="material-icons-outlined align-middle me-1" style="font-size:18px;">groups</span>
+                            Cupos
+                        </div>
+                        <div class="fw-semibold">@(Model.Ilimitado ? "Ilimitado" : (Model.CuposLimite?.ToString() ?? "Por definir"))</div>
+                    </div>
 
                     @if (!string.IsNullOrWhiteSpace(Model.WhatsappNumero))
                     {
                         <a target="_blank"
                            href="https://wa.me/51@(Model.WhatsappNumero)"
-                           class="btn btn-success w-100">
-                            Contactar por WhatsApp
-                        </a>
+                           class="btn btn-success w-100 mb-2">Contactar por WhatsApp</a>
                     }
                     else
                     {
-                        <div class="alert alert-secondary small">
-                            Contacto no disponible.
-                        </div>
+                        <button class="btn btn-secondary w-100 mb-2" disabled>Contacto no disponible</button>
                     }
+
+                    <div class="text-muted small text-center">Coordinas directamente con la organización.</div>
                 </div>
             </div>
         </div>
